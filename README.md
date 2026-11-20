@@ -59,7 +59,7 @@ python -m piper \
   -- "Somebody turn the lights on. I can't see a thing."
 ```
 
-Play `francis-test.wav` to assess clarity, pronunciation and similarity. CPU inference does not require the RTX 4070 Ti. See [CLI guide](docs/CLI.md) and [Troubleshooting](docs/TROUBLESHOOTING.md).
+Play `francis-test.wav` to assess clarity, pronunciation and similarity. See [CLI guide](docs/CLI.md) and [Troubleshooting](docs/TROUBLESHOOTING.md).
 
 ## Home Assistant integration
 
@@ -76,8 +76,6 @@ See [Home Assistant installation](docs/HOME_ASSISTANT.md). The user interface ca
 ## How this project was prepared
 
 The creator worked with pre-split Francis voice-line files; in the initial scan there were 2,730 paths, including 1,365 byte-identical duplicates. A compatibility issue in the audio decoder was repaired and the final processed dataset contained **1,284 WAV files and 1,284 `metadata.csv` lines**. Faster-Whisper generated draft transcripts; manual transcript correction has **not** been verified.
-
-The intended training configuration reuses the Piper setup already proven on the creator's RTX 4070 Ti. It starts from Lessac medium, uses a batch size of 4, an English eSpeak phonemizer, and writes its own Francis model/checkpoint directories. These are configuration details—not claims about the number of completed epochs. See [Data preparation](docs/DATASET.md) and [Training](docs/TRAINING.md).
 
 ## Documentation
 
