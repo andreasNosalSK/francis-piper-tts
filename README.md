@@ -84,19 +84,6 @@ The model's performance depends on the quality and diversity of the training rec
 
 A successful ONNX export does not guarantee that every generated phrase will sound natural.
 
-## Repository contents
-
-- [MODEL_CARD.md](MODEL_CARD.md) - technical details, model architecture and known limitations
-- [docs/HOME_ASSISTANT.md](docs/HOME_ASSISTANT.md) - Piper / Wyoming installation
-- [docs/CLI.md](docs/CLI.md) - local generation and verification
-- [docs/DATASET.md](docs/DATASET.md) - dataset preparation and transcription process
-- [docs/TRAINING.md](docs/TRAINING.md) - training configuration and reproducibility notes
-- [docs/EXPORT.md](docs/EXPORT.md) - exporting checkpoints to ONNX
-- [docs/PUBLISHING.md](docs/PUBLISHING.md) - GitHub release workflow
-- [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) - common problems and solutions
-- [scripts/verify_voice.py](scripts/verify_voice.py) - validate model/config files and print checksums
-- [scripts/prepare_release.py](scripts/prepare_release.py) - stage local model files for a Release
-
 ## Credits
 
 Thanks to the [Piper TTS project](https://github.com/OHF-Voice/piper1-gpl), [Faster-Whisper](https://github.com/SYSTRAN/faster-whisper), The Sounds Resource community, and [Home Assistant](https://www.home-assistant.io/) for the tools and resources used to create this voice model.
